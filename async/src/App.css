@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+/* Button */
+.updateBtn {
+  background-color: #EFF1ED;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+  padding: 1%;
+}
+
+/* Image */
+
+.catImg {
+  max-width: 500px;
+  margin: 2% 0;
+  border: 15px solid #EFF1ED;
+}

@@ -1,4 +1,4 @@
-import { FETCH_CATS, UPDATE_IMG } from '../actions';
+import { FETCH_CATS, UPDATE_IMG, ERROR } from '../actions';
 
 export const initialState = {
     isFetching: false,
@@ -19,6 +19,12 @@ export const catImgReducer = (state = initialState, action) => {
                 ...state,
                 isFetching: false,
                 catImg: action.payload
+            }
+        case ERROR:
+            return {
+                ...state,
+                isFetching: false,
+                error: action.payload
             }
         default:
             return state;
